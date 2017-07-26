@@ -1,0 +1,220 @@
+body{
+	margin:0;
+	padding:0;
+	background: #BDC3C7;
+	font-family: "Microsoft YaHei","WenQuanYi Micro Hei","tohoma,sans-serif";
+}
+a{
+	color: #3498DB;
+}
+a:link {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration:underline;
+	color: #1D6FA5;
+}
+a:active {
+	text-decoration:underline;
+	background: #35373C;
+
+}
+/*去除图片边框*/
+img {
+	border-width: 0;
+}
+dl{
+	margin: 0;
+	padding: 0;
+}
+/*left****************start*/
+.left{
+	position: fixed;
+	display: inline-block;
+	top:0;
+	left: 0;
+	width: 230px;
+	min-height: 2000px;
+	float: left;
+	background: #35373C;
+}
+.logo{
+	height: 60px;
+	background-image: url("http://ninewan.qiniudn.com/fujianlogo60.png");
+}
+.left .l_t{
+	color: #00B8BE;
+	font-weight: bold;
+}
+.left .list_top{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	margin-top: 50px;
+	font-size: 12px;
+}
+.left .list_top li{
+	padding-bottom: 16px;
+	margin-left: 30px;
+
+}
+.left .list_bottom{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	font-size: 12px;
+}
+.left .list_bottom li{
+	color: #fff;
+	font-size: 10px;
+	line-height: 16px;
+	padding-bottom: 8px;
+	margin-left: 30px;
+}
+.left li a{
+	color: #fff;
+	font-weight: 700;
+	width: 100%;
+	display: block;
+	position: relative;
+	line-height: 20px;
+}
+.left li a:hover{
+	color: #00B8BE;
+	text-decoration: none;
+
+}
+.left li a:hover:before{
+	position: absolute;
+	left: -30px;
+	top: 0;
+	content: "";
+	width: 3px;
+	height: 20px;
+	background: #00B8BE;
+}
+.left hr{
+	border: 0;
+	border-top: 1px solid #46484D;
+	margin-left: 30px;
+	width: 170px;
+}
+.left .search{
+    margin-top:5px;
+    margin-bottom:5px;
+    width:165px;
+    height:28px;
+	margin-left: 30px;
+}
+.left .search input{
+    float:left;
+    color:#fff;
+    font-family:"Microsoft YaHei","WenQuanYi Micro Hei","tohoma,sans-serif";
+    padding:0;
+    border:0;
+    width:130px;
+    height:26px;
+    background:#35373C;
+    margin-right:5px;
+    border:1px solid #04aeda;
+}
+.left .search input:focus{
+    
+	outline: none;
+}
+.left .search .button{
+	cursor: pointer;
+    padding:0;
+    margin:0;
+    border:none;
+    width:28px;
+    height:28px;
+    background:#35373C;
+	background-image: url("http://ninewan.qiniudn.com/fujiansearch_blue2.png");
+}
+
+
+
+
+/*left******************end*/
+.right{
+	margin-left: 260px;
+	min-width: 900px;
+	min-height: 20px;
+	font-size: 14px;
+	overflow:hidden
+	
+}
+.unit{
+    position:relative;
+    height: 376px;
+	width: 220px;
+	background: #fff;
+	margin-right: 20px;
+	float: left;
+	margin-top: 20px;
+	box-shadow:3px 3px 5px rgba(0, 0, 0, 0.15);
+	overflow: hidden;
+}
+.unit .title{
+	
+	/* padding: 0 8px; */
+	font-weight: bold;
+	line-height: 32px;
+	width: 204px;
+	/* white-space:nowrap; */
+}
+.unit .type{
+	margin-top: -5px;
+	padding: 0 8px;
+	color:#999;
+}
+.unit .Score{
+	background: #fcfcfc;
+	line-height: 28px;
+	padding: 0 8px;
+	margin-top: 5px;
+    font-size:12px;
+}
+/*分页样式*/
+.resultpage{
+	padding-top: 30px;
+	padding-bottom: 30px;
+	clear: both;
+	margin-left: 290px;
+}
+.resultpage a:hover{
+	text-decoration: none;
+}
+.resultpage a{
+	display:inline-block;
+	min-width: 30px;
+	height: 30px;
+	margin-right: 4px;
+	background: #fff;
+	line-height: 30px;
+	text-align: center;
+	font-size: 12px;
+}
+.current{
+	display:inline-block;
+	min-width: 30px;
+	height: 30px;
+	margin-right: 4px;
+	line-height: 30px;
+	text-align: center;
+	background: #CE4E7C;
+	border-radius:3px;
+	font-size: 12px;
+}
+.footer{
+	clear: both;
+	padding-top: 20px;
+	padding-bottom: 10px;
+}
+.footer p{
+	margin: 0;
+	padding:0;
+	text-align: center;
+}
+

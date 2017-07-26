@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="./css/reset.css">
+	<link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+	<header>
+		<h1>XXX的博客</h1>
+		<h4>好好学习</h4>
+	</header>
+	<nav>
+		<ul>
+			<li><a href="">导航</a></li>
+			<li><a href="">导航</a></li>
+			<li><a href="">导航</a></li>
+			<li><a href="">导航</a></li>
+		</ul>
+	</nav>
+	<div id="main">
+		<div id="lside">
+			<?php foreach($arts as $v){?>
+			<article>
+				<h2><a href="art.php?art_id=<?php echo $v['art_id'];?>"><?php echo $v['title'];?></a></h2>
+				<div class="intro">
+					<time><?php echo date('Y-m-d',$v['pubtime']);?></time>
+					作者:
+					<a href="#">米奇</a>
+					<a href="#" class="catlink"><?php echo $v['catname'];?></a>
+					<a href="#" class="comment"><?php echo $v['comm'];?>条评论</a>
+				</div>
+				<?php if($v['thumb']){?>
+					<img src="<?php echo $v['thumb'];?>" alt="">
+				<?php }?>
+				<p><?php echo $v['content'];?></p>
+			</article>
+			<?php } ?>
+			<div id="pagebar">
+				pages:&nbsp;
+				<?php foreach($pages as $k=>$v){?>
+					<?php if($k == $page){?>
+					<?php echo $k;}else{?>
+					<a href="index.php?<?php echo $v;?>"><?php echo $k;?></a>
+					<?php }?>
+				<?php } ?>
+			</div>
+		</div>
+		<div id="rside">
+			<aside>
+				<form action="">
+					<input type="search" placeholder="Search....">
+				</form>
+			</aside>
+			<aside>
+				<h4>栏目列表</h4>
+				<ul>
+					<?php foreach($cat as $v){?>
+					<li><a href="index.php?cat_id=<?php echo $v['cat_id']?>"><?php echo $v['catname']?></a>(<?php echo $v['num']?>)</li>
+					<?php } ?>
+				</ul>
+			</aside>
+			<aside>
+				<h4>测试标题</h4>
+				<ul>
+					<li><a href="#">文章标题</a>(3)</li>
+					<li><a href="#">文章标题</a></li>
+					<li><a href="#">文章标题</a></li>
+					<li><a href="#">文章标题</a></li>
+				</ul>
+			</aside>
+		</div>
+		<div id="clear"></div>
+	</div>
+	<footer>Copyright &copy; 2017  · GeneratePress  · WordPress</footer>
+</body>
+</html>

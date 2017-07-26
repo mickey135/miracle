@@ -1,0 +1,170 @@
+.detail{
+	margin-left: 260px;
+    margin-bottom: 20px;
+    height: 1000px;
+	width:  960px;
+	background: #FCFCFC;
+}
+.detail .zw{
+	height: 20px;
+	width: 960px;
+	background: #BDC3C7;
+}
+.d_img{
+	float: left;
+}
+.d_img img{
+	padding: 10px 15px 10px 10px;
+	width: 220px;
+	height: 300px;
+
+}
+.d_title{
+	margin: 0;
+	margin-bottom: 15px;
+	padding-top: 10px;
+	color:#C46386;
+}
+.tb{
+	font-size: 12px;
+	border-collapse:collapse;
+	width: 65%;
+	color: #555;
+
+
+}
+td{
+	height: 25px;
+	border: 1px solid #ccc;
+	padding-left: 5px;
+}
+.fis_td{
+	width: 100px;
+	font-weight: bold;
+}
+.d_bianse{
+	background: #eee;
+}
+.video{
+    
+	background: #00B8BE;
+	display:inline-block;
+	color: #FFF;
+	margin-top:10px;
+	line-height: 40px;
+	padding: 0 28px;
+	font-weight: bold;
+}
+.video:hover{
+	background:#009095;
+
+}
+.line{
+	margin: 0 auto;
+	margin-top:40px;
+	height: 1px;
+	background: #ccc;
+	width: 97%;
+}
+.summary{
+	display: block;
+	padding: 0 12px;
+}
+.summary  h3{
+	color:#C46386;
+}
+.summary .sum{
+	text-indent: 2em; 
+	font-size: 14px;
+	color: #444;
+}
+
+/*第二种形式*/
+#tabs {
+	text-align:left;
+	width:600px;
+	padding: 35px 12px;
+}
+.menu1box {
+	position:relative;
+	overflow:hidden;
+	height:22px;
+	width:500px;
+	text-align:left;
+}
+.menu1box a:hover{
+	text-decoration: none;
+}
+#menu1 {
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:1;
+}
+.menu1box ul {
+	margin:0 auto;
+	padding:0;
+}
+#menu1 li {
+	margin:0 auto;
+	padding:0;
+	float:left;
+	display:block;
+	cursor:pointer;
+	width:72px;
+	text-align:center;
+	line-height:21px;
+	height:21px;
+	list-style: none;
+}
+#menu1 li.hover {
+	background:#FCFCFC;
+	border-left:1px solid #ccc;
+	border-top:1px solid #ccc;
+	border-right:1px solid #ccc;
+}
+.main1box {
+	clear:both;
+	margin-top:-1px;
+	border-top:1px solid #ccc;
+	min-height:381px;
+	width:930px;
+}
+.main1{
+	clear:both;
+}
+#main1 ul {
+	display: none;
+	font-size: 14px;
+
+	padding: 0 10px;
+}
+#main1 ul.block {
+	display: block;
+}
+.menu1box ul {
+	list-style:none;
+}
+
+/*第二种形式end*/
+
+/*ed2k 表格*/
+.tb_ed2k{
+	font-size: 12px;
+	border-collapse:collapse;
+	color: #333;
+}
+.tb_ed2k .tb_title{
+	width: 716px;
+}
+.tb_ed2k .tb_size{
+	width: 60px;
+}
+.tb_ed2k .tb_down{
+	width: 30px;
+}
+.tb_ed2k .tb_copy{
+    width:54px;
+    cursor:pointer;
+}
+/*ed2k 表格end*/
