@@ -1,26 +1,62 @@
-## Laravel PHP Framework
+## test test
 
-[![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
-[![Total Downloads](https://poser.pugx.org/laravel/framework/d/total.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Stable Version](https://poser.pugx.org/laravel/framework/v/stable.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Unstable Version](https://poser.pugx.org/laravel/framework/v/unstable.svg)](https://packagist.org/packages/laravel/framework)
-[![License](https://poser.pugx.org/laravel/framework/license.svg)](https://packagist.org/packages/laravel/framework)
+本项目使用 PHP 框架 Laravel 5.4 进行开发。 项目依赖了部分云服务，如图片使用了七牛云储存。（目前必须，暂时没有加入本地存储图片的功能）
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as authentication, routing, sessions, queueing, and caching.
+### 项目功能具有以下功能
 
-Laravel is accessible, yet powerful, providing powerful tools needed for large, robust applications. A superb inversion of control container, expressive migration system, and tightly integrated unit testing support give you the tools you need to build any application with which you are tasked.
+分类管理
+文章管理
+标签管理
+评论管理
+导航管理
+Redis 缓存
+<!-- 好用的 Simplemde Markdown 编辑器 -->
 
-## Official Documentation
+## 项目概述
 
-Documentation for the framework can be found on the [Laravel website](http://laravel.com/docs).
+* 项目名称：MyPersimmon
+* 项目运行地址：https://cong5.net/
 
-## Contributing
+[MyPersimmon](https://github.com/Cong5/myPersimmon) 基于Laravel 5.4 版本开发。
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](http://laravel.com/docs/contributions).
+## 目前运行环境
 
-## Security Vulnerabilities
+- Nginx 1.8+
+- PHP 5.6+
+- MySQL 5.5+
+- Redis 3.0+
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
+## 部署/安装
+
+需要在系统上安装了基本的PHP运行环境、PHP包管理工具composer、Nodejs进行前端资源打包
+
+### 基础安装
+
+#### 1. 克隆源代码
+
+克隆源代码到本地：
+
+    > git clone https://github.com/Cong5/myPersimmon.git
+
+#### 2. 安装扩展包依赖
+
+    > composer install
+
+#### 4. 生成配置文件
+
+    > cp .env.example .env
+
+#### 5. 执行数据库迁移
+
+```shell
+php artisan migrate
+```
+
+#### 6. 填充初始数据
+
+```shell
+php artisan db:seed
+```
 
 ### License
 
