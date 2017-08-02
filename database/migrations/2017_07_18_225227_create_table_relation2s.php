@@ -14,6 +14,7 @@ class CreateTableRelation2s extends Migration
     {
         Schema::create('relation2s', function (Blueprint $table) {
             $table->increments('relation2_id');
+            $table->integer('movie_id');//电影id
             $table->integer('actor_id');//演员id
         });
     }

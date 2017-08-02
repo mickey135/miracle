@@ -31,4 +31,43 @@ class CountryController extends Controller
     		}		
     	}
     }
+
+    /**
+     * [countryEdit 地区修改]
+     * @param  Request $req        [description]
+     * @param  [type]  $country_id [description]
+     * @return [type]              [description]
+     */
+    public function countryEdit(Request $req,$country_id){
+        $country = new Country();
+        $data = $country->find($country_id);
+        if(empty($_POST)){
+            return view('admin/countryedit',['country'=>$data]);
+        }else{
+            if($req->title == ""){
+                return '栏目不能为空';
+            }elseif($country::where('country',$req->title)->first()){
+                return back()->with('msg','栏目名已存在');
+            }else{
+                $data->country = $req->title;
+                $data->save();
+                return  redirect('admin/country');
+            }   
+            
+        }
+    }
+
+    /**
+     * [countryDel 地区删除]
+     * @param  [type] $country_id [description]
+     * @return [type]             [description]
+     */
+    public function countryDel($country_id){
+        Country::where('country_id',$country_id)->delete();
+        return back();
+    }
+
+
+
+
 }

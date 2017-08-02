@@ -30,6 +30,15 @@
             </div>
             <div class="form-group">
               <div class="label">
+                <label>电影名：</label>
+              </div>
+              <div class="field">
+                <input type="text" class="input w50" value="" name="movie_name"/>
+                <div class="tips"></div>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="label">
                 <label>别名：</label>
               </div>
               <div class="field">
@@ -114,7 +123,7 @@
         <div class="form-group">
               <h3><span>剧情简介：</span></h3>
               <div class="field">
-                <textarea class="input" name="intro" style=" height:90px;"></textarea>
+                <textarea class="input" name="intro" style=" height:90px;"><br><h3 id="xiazai" style="text-indent:0;">下载地址</h3><div><a href=""></a></div></textarea>
                 <div class="tips"></div>
               </div>
         </div>

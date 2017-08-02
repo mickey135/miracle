@@ -46,7 +46,7 @@
 		<ul class="list_bottom">
 			<li><a href="#">关于</a></li>
 			<li><a href="#">友情链接</a></li>
-			<li>Copyright © 2017 gopikachu</li>
+			<li>Copyright © 2017 gopikachu.cn</li>
 	    </ul>
 		
 	</div>

@@ -27,7 +27,8 @@ class MovieController extends Controller
     	}else{
 			//向movies表添加数据
 			$movie = new Movie();
-			$movie->movie_name = $req->title;
+			$movie->title = $req->title;
+			$movie->movie_name = $req->movie_name;
 			$movie->image = $req->img;
 			$movie->director = $req->director;
 			$movie->time = $req->time;
@@ -60,7 +61,14 @@ class MovieController extends Controller
 						DB::table('relation2s')->insert(['movie_id'=>$id,'actor_id'=>$actor_id]);
 					}
 				}
-			}				
+			}
+
+			//向地区表添加数量加一
+			DB::table('countrys')->where('country',$req->country)->increment('num');
+
+
+
+			return redirect('admin/list');				
 
 	   
 	    }
