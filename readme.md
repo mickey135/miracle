@@ -45,6 +45,7 @@ Redis 缓存
 #### 4. 生成配置文件
 
     > cp .env.example .env
+    >运行 php artisan key:generate
 
 #### 5. 执行数据库迁移
 
