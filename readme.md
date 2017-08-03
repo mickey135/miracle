@@ -57,7 +57,7 @@ php artisan migrate
 ```shell
 php artisan db:seed
 ```
-### 7. 在centos中修改文件夹权限
+#### 7. 在centos中修改文件夹权限
 - chmod -R 777 bootstrap
 - chmod -R 777 storage
 
