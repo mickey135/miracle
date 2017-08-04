@@ -31,6 +31,15 @@
             </div>
             <div class="form-group">
               <div class="label">
+                <label>电影名：</label>
+              </div>
+              <div class="field">
+                <input type="text" class="input w50" value="{{$movie->movie_name}}" name="movie_name"/>
+                <div class="tips"></div>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="label">
                 <label>别名：</label>
               </div>
               <div class="field">

@@ -23,7 +23,7 @@
         </div>
 
         <div class="field">
-          <input type="text" class="input w50" name="title" value="{{$cat->cat_name}}" />
+          <input type="text" class="input w50" name="title" value="{{$type->type}}" />
             @if(Session::has('msg'))
               <div class="tips">
                 <p style="color:red;">{{ Session::get('msg')}}</p>

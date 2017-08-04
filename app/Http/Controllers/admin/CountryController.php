@@ -63,8 +63,13 @@ class CountryController extends Controller
      * @return [type]             [description]
      */
     public function countryDel($country_id){
-        Country::where('country_id',$country_id)->delete();
-        return back();
+        $num = Country::where('country_id',$country_id)->first(['num']);
+        if($num == 0){
+            Country::where('country_id',$country_id)->delete();
+            return back();       
+        }else{
+            return '该地区下面存在电影,不能删除';
+        }
     }
 
 

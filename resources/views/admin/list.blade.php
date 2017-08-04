@@ -45,7 +45,7 @@
           <td>{{$v->movie_name}}</td>
           <td>{{$v->time}}</td>
           <td>{{$v->updated_at}}</td>
-          <td><div class="button-group"> <a class="button border-main" href="{{url('admin/edit',['id'=>$v->movie_id])}}"><span class="icon-edit"></span> 修改</a> <a class="button border-red" href="javascript:void(0)" onclick="return del(1,1,1)"><span class="icon-trash-o"></span> 删除</a> </div></td>
+          <td><div class="button-group"> <a class="button border-main" href="{{url('admin/edit',['id'=>$v->movie_id])}}"><span class="icon-edit"></span> 修改</a> <a class="button border-red" href="{{url('admin/del',['id'=>$v->movie_id])}}" onclick="return del(1,1,1)"><span class="icon-trash-o"></span> 删除</a> </div></td>
         </tr>
 	@endforeach
       <tr>

@@ -62,4 +62,10 @@ class AuthController extends Controller
             'password' => bcrypt($data['password']),
         ]);
     }
+
+    //重新设定登录路由
+    public function loginPath()
+    {
+        return property_exists($this, 'loginPath') ? $this->loginPath : '/myp';
+    }
 }

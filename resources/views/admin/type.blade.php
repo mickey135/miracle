@@ -29,7 +29,7 @@
       <td>{{$v->type_id}}</td>
       <td>{{$v->type}}</td>
       <td>{{$v->num}}</td>
-      <td><div class="button-group"> <a class="button border-main" href="{{url('admin/catedit',['cat_id'=>$v->cat_id])}}"><span class="icon-edit"></span> 修改</a> <a class="button border-red" href="{{url('admin/catdel',['cat_id'=>$v->cat_id])}}" onclick="return del(1,2)"><span class="icon-trash-o"></span> 删除</a> </div></td>
+      <td><div class="button-group"> <a class="button border-main" href="{{url('admin/typeedit',['type_id'=>$v->type_id])}}"><span class="icon-edit"></span> 修改</a> <a class="button border-red" href="{{url('admin/typedel',['type_id'=>$v->type_id])}}" onclick="return del(1,2)"><span class="icon-trash-o"></span> 删除</a> </div></td>
     </tr>
    @endforeach
   </table>
