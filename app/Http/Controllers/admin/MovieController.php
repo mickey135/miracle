@@ -81,7 +81,7 @@ class MovieController extends Controller
      * @return [type] [description]
      */
     public function list(){
-    	$movie = Movie::paginate(10);
+    	$movie = Movie::orderBy('movie_id', 'desc')->paginate(10);
     	return view('admin.list',['movie'=>$movie]);
     	// return view('admin.list');
 
