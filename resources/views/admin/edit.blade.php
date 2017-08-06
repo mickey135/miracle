@@ -25,7 +25,7 @@
                 <label>标题：</label>
               </div>
               <div class="field">
-                <input type="text" class="input w50" value="{{$movie->movie_title}}" name="title" data-validate="required:请输入标题" />
+                <input type="text" class="input w50" value="{{$movie->title}}" name="title" data-validate="required:请输入标题" />
                 <div class="tips"></div>
               </div>
             </div>
