@@ -8,7 +8,7 @@
     <div class="detail">
 			<div class="zw"></div>
 			<div class="d_img">
-				<img src="">
+				<img src="{{$movie->image}}">
 			</div>
 			<h2 class="d_title">{{$movie->title}}</h2>
 			<table class="tb">
