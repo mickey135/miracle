@@ -17,8 +17,19 @@
 Route::get('/','IndexController@latest');
 //热门电影
 Route::get('hot','IndexController@hot');
+//国内电影
+Route::get('gn','IndexController@gn');
+//日韩电影
+Route::get('rh','IndexController@rh');
+//欧美电影
+Route::get('om','IndexController@om');
+//动画电影
+Route::get('dh','IndexController@dh');
 //电影信息
 Route::get('detail/{id}','IndexController@movie');
+
+
+
 
 //后台路由栏目管理
 Route::group(['middleware' => 'auth'], function () {

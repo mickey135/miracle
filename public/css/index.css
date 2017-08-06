@@ -40,7 +40,7 @@ dl{
 }
 .logo{
 	height: 60px;
-	background-image: url("http://ninewan.qiniudn.com/fujianlogo60.png");
+	background-image: url("/img/logo.jpg");
 }
 .left .l_t{
 	color: #00B8BE;

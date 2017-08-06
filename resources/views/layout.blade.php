@@ -24,12 +24,12 @@
 				<li class="l_t">电影频道</li>
 				<li><a href="/">首页</a></li>
 				<li><a href="{{url('hot')}}">新片精品</a></li>
-				<li><a href="#">国内电影</a></li>
-				<li><a href="#">日韩影片</a></li>
-				<li><a href="#">欧美影片</a></li>
-		        <li><a href="#">动画电影</a></li>
+				<li><a href="{{url('gn')}}">国内电影</a></li>
+				<li><a href="{{url('rh')}}">日韩影片</a></li>
+				<li><a href="{{url('om')}}">欧美影片</a></li>
+		        <li><a href="{{url('dh')}}">动画电影</a></li>
 		        <li><a href="#">分类列表</a></li>
-		        <li style="display:none;"><a href="#" target="right">39文库</a></li>
+		        <li style="display:none;"><a href="#"></a></li>
 		    </ul>
 		</nav>
 
