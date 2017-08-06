@@ -27,6 +27,8 @@ Route::get('om','IndexController@om');
 Route::get('dh','IndexController@dh');
 //电影信息
 Route::get('detail/{id}','IndexController@movie');
+Route::get('actor/{actor}','MovieController@actor');
+Route::get('type/{type}','MovieController@type');
 
 
 

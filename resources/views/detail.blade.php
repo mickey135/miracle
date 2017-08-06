@@ -25,7 +25,7 @@
 						<td class="fis_td">主演</td>
 						<td>
 							@foreach($actor as $v)
-							<a href="url('search/actor',['actor_id'=>$v->actor_id])">{{$v->actor}}</a>
+							<a href="{{url('actor',['actor'=>$v->actor])}}">{{$v->actor}}</a>
 							@endforeach
 						</td>
 					</tr>
@@ -33,7 +33,7 @@
 						<td class="fis_td">类型</td>
 						<td>
 							@foreach($type as $v)
-							<a href="url('search/type',['type_id'=>$v->type_id])">{{$v->type}}</a>
+							<a href="{{url('type',['type'=>$v->type])}}">{{$v->type}}</a>
 							@endforeach
 						</td>
 					</tr>
