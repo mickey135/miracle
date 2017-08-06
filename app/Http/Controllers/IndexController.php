@@ -74,7 +74,7 @@ class IndexController extends Controller
      */
     public function dh(){
         $title = '动画电影';
-        $id = Relation::where('type_id',7)->get(['movie_id']);
+        $id = Relation::where('type_id',8)->get(['movie_id']);
         $data = [];
         foreach($id as $v){
           $data[] = $v->movie_id;
