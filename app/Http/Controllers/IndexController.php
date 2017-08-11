@@ -121,8 +121,7 @@ class IndexController extends Controller
         $results = $sphinx->search($req->keyword, 'movies')->query();
         // print_r(array_keys($results['matches']));
         if(!$results['matches']){
-            $movie = ;
-            return view('list',['movie'=>$movie,'title'=>$title]);
+            return view('list',['title'=>$title]);
             exit;
         }
         $res = array_keys($results['matches']);
