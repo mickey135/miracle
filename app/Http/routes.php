@@ -26,7 +26,7 @@ Route::get('om','IndexController@om');
 //动画电影
 Route::get('dh','IndexController@dh');
 //电影信息
-Route::get('detail/{id}','IndexController@movie');
+Route::get('detail/{id}','IndexController@movie')->where('id', '[0-9]+');
 Route::get('actor/{actor}','MovieController@actor');
 Route::get('type/{type}','MovieController@type');
 //搜索
