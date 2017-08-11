@@ -121,9 +121,8 @@ class IndexController extends Controller
         $results = $sphinx->search($req->keyword, 'movies')->query();
         // print_r(array_keys($results['matches']));
         if(!isset($results['matches'])){
-            return view('list',['title'=>$title]);
+            return view('sou',['title'=>$title]);
         }else{
-            
             $res = array_keys($results['matches']);
             $movie = Movie::whereIn('movie_id',$res)->orderby('movie_id','desc')->paginate(50);
             return view('list',['movie'=>$movie,'title'=>$title]);
