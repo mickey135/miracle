@@ -119,6 +119,7 @@ class IndexController extends Controller
         $sphinx = new SphinxSearch();
         $results = $sphinx->search($req->keyword, 'movies')->query();
         // print_r(array_keys($results['matches']));
+        dd($results);
         $res = array_keys($results['matches']);
         $movie = Movie::whereIn('movie_id',$res)->orderby('movie_id','desc')->paginate(50);
         $title = $req->keyword.'的搜索结果';
