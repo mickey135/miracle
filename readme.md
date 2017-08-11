@@ -25,7 +25,7 @@ sphinx全文搜索
 - Nginx 1.8+
 - PHP 7+
 - MariaDB 5.5+
-- coreseek4.1(spginx+mmseg)
+- coreseek4.1(sphinx+mmseg)
 <!-- - Redis 3.0+ -->
 
 ## 部署/安装
