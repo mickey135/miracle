@@ -122,11 +122,12 @@ class IndexController extends Controller
         // print_r(array_keys($results['matches']));
         if(!isset($results['matches'])){
             return view('list',['title'=>$title]);
-            exit;
+        }else{
+            
+            $res = array_keys($results['matches']);
+            $movie = Movie::whereIn('movie_id',$res)->orderby('movie_id','desc')->paginate(50);
+            return view('list',['movie'=>$movie,'title'=>$title]);
         }
-        $res = array_keys($results['matches']);
-        $movie = Movie::whereIn('movie_id',$res)->orderby('movie_id','desc')->paginate(50);
-        return view('list',['movie'=>$movie,'title'=>$title]);
 
     }
 }
