@@ -116,13 +116,17 @@ class IndexController extends Controller
      * @return [type] [description]
      */
     public function search(Request $req) {
+        $title = $req->keyword.'的搜索结果';
         $sphinx = new SphinxSearch();
         $results = $sphinx->search($req->keyword, 'movies')->query();
         // print_r(array_keys($results['matches']));
-        dd($results);
+        if(!$results['matches']){
+            $movie = ;
+            return view('list',['movie'=>$movie,'title'=>$title]);
+            exit;
+        }
         $res = array_keys($results['matches']);
         $movie = Movie::whereIn('movie_id',$res)->orderby('movie_id','desc')->paginate(50);
-        $title = $req->keyword.'的搜索结果';
         return view('list',['movie'=>$movie,'title'=>$title]);
 
     }
