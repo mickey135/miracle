@@ -12,6 +12,7 @@ use App\Relation2;
 use App\Actor;
 use App\Type;
 use DB;
+use sngrl\SphinxSearch\SphinxSearch;//sphinx搜索
 class IndexController extends Controller
 {
 	/**
@@ -108,5 +109,15 @@ class IndexController extends Controller
          // dd($country);
          return view('detail',['movie'=>$movie,'actor'=>$actor,'type'=>$type,'country'=>$country]);
 
+    }
+
+    /**
+     * [search 搜索]
+     * @return [type] [description]
+     */
+    public function search($keyword) {
+        $sphinx = new SphinxSearch();
+        $results = $sphinx->search($keyword, 'movies')->query();
+        dd($results);
     }
 }
