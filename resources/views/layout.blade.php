@@ -48,7 +48,7 @@
 		<!-- 搜索栏 -->
 		<div class="search">
 	        <form action="{{url('search')}}" method="get">
-	 		 		<input type="text" name="keyword">
+	 		 		<input type="text" name="keyword" required="required">
 	            	<input type="submit" value="" class="button">
 			</form>
 	    </div>
