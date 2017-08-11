@@ -30,7 +30,7 @@ Route::get('detail/{id}','IndexController@movie');
 Route::get('actor/{actor}','MovieController@actor');
 Route::get('type/{type}','MovieController@type');
 //搜索
-Route::get('search/{keyword}','IndexController@search');
+Route::get('search','IndexController@search');
 
 
 
