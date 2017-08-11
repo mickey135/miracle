@@ -9,6 +9,7 @@
 标签管理
 <!-- 评论管理 -->
 导航管理
+sphinx全文搜索
 <!-- Redis 缓存 -->
 <!-- 好用的 Simplemde Markdown 编辑器 -->
 
@@ -24,6 +25,7 @@
 - Nginx 1.8+
 - PHP 7+
 - MariaDB 5.5+
+- coreseek4.1(spginx+mmseg)
 <!-- - Redis 3.0+ -->
 
 ## 部署/安装
