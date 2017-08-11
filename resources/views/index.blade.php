@@ -8,9 +8,7 @@
 		<div class="unit">
 			<a href="{{url('detail',['id'=>$v->movie_id])}}"><img src="{{$v->image}}" width="220" height="300"></a>
 			<a class="title" href="{{url('detail',['id'=>$v->movie_id])}}" target="_blank">{{$v->title}}</a>
-		</div>
-		@empty
-			{{'搜索结果为空'}}			
+		</div>		
 		@endforeach
 		<div class="totop" onclick="scrollTo(0,0);" style="position: fixed;bottom:100px;right:40px;background-image:url(&#39;/img/totop.gif&#39;);height:40px;width:40px;cursor:pointer;"></div>
 	</div>
