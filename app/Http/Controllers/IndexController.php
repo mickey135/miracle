@@ -117,7 +117,7 @@ class IndexController extends Controller
      */
     public function search($keyword) {
         $sphinx = new SphinxSearch();
-        $results = $sphinx->search($keyword, 'movies')->get();
+        $results = $sphinx->search($keyword, 'movies')->query();
         print_r($results);
     }
 }
