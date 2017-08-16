@@ -12,7 +12,6 @@
 */
 
 
-
 //首页&最新电影
 Route::get('/','IndexController@latest');
 //热门电影
