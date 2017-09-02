@@ -118,7 +118,7 @@
     var tanchuang_msg = document.getElementById('tanchuang_msg');		
 	var ws = new WebSocket('ws://47.94.147.221:9501');
 	ws.onopen = function(){
-		console.log('连接成功');
+		// console.log('连接成功');
 	}
 	ws.onmessage = function(ev){
 		// tanchuang_msg.innerHTML = '';
