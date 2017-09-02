@@ -20,7 +20,7 @@
 	</script>
 	<!-- 消息弹窗代码 -->
 	<style type="text/css">
-		#winpop { width:200px; height:0px; position:absolute; right:0; bottom:0; border:1px solid #999999; margin:0; padding:1px; overflow:hidden; display:none; background:#FFFFFF}
+		#winpop { width:200px; height:0px; position:fixed; right:0; bottom:0; border:1px solid #999999; margin:0; padding:1px; overflow:hidden; display:none; background:#FFFFFF}
 		#winpop #tanchuang_title { width:100%; height:20px; line-height:20px; background:#FFCC00; font-weight:bold; text-align:center; font-size:12px;}
 		#winpop #tanchuang_msg { width:100%; height:80px; line-height:80px; font-weight:bold; font-size:12px; color:#FF0000; text-decoration:underline; text-align:center}
 		#tanchuang_close { position:absolute; right:4px; top:-1px; color:#FFFFFF; cursor:pointer}
@@ -120,7 +120,7 @@
 	}
 	window.onload=function(){    //加载
 	document.getElementById('winpop').style.height='0px';//我不知道为什么要初始化这个高度,CSS里不是已经初始化了吗,知道的告诉我一下
-	setTimeout("tips_pop()",800);     //3秒后调用tips_pop()这个函数
+	// setTimeout("tips_pop()",800);     //3秒后调用tips_pop()这个函数
 	}
 </script>
 </html>
